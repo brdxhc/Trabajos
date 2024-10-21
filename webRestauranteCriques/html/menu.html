@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pedidos de Comida</title>
+    <link rel="stylesheet" href="../css/menu.css" />
+  </head>
+  <body>
+    <!-- Encabezado con enlace para volver a la página principal -->
+    <header>
+      <h1>Menú del Restaurante</h1>
+      <nav>
+        <a href="index.html">Volver a Inicio</a>
+      </nav>
+    </header>
+
+    <!-- Contenedor del menú -->
+    <div class="menu-container">
+      <h1>Elige tus Platos</h1>
+      <div class="menu-items">
+        <!-- Plato 1 -->
+        <div class="menu-item">
+          <h3>Plato 1: Casado con Pollo</h3>
+          <p>Delicioso casado con pollo, arroz, frijoles y plátano maduro.</p>
+          <button
+            class="add-to-order"
+            data-name="Casado con Pollo"
+            data-price="4000"
+          >
+            Añadir al pedido (₡4000)
+          </button>
+        </div>
+
+        <!-- Plato 2 -->
+        <div class="menu-item">
+          <h3>Plato 2: Ceviche</h3>
+          <p>Ceviche fresco de mariscos con galletas saladas.</p>
+          <button class="add-to-order" data-name="Ceviche" data-price="3500">
+            Añadir al pedido (₡3500)
+          </button>
+        </div>
+
+        <!-- Plato 3 -->
+        <div class="menu-item">
+          <h3>Plato 3: Arroz con Camarones</h3>
+          <p>
+            Delicioso arroz con camarones, acompañado de ensalada y plátano.
+          </p>
+          <button
+            class="add-to-order"
+            data-name="Arroz con Camarones"
+            data-price="5000"
+          >
+            Añadir al pedido (₡5000)
+          </button>
+        </div>
+      </div>
+
+      <!-- Mostrar el pedido actual -->
+      <div class="order-summary">
+        <h2>Pedido Actual</h2>
+        <ul id="order-list">
+          <!-- Los platos seleccionados aparecerán aquí -->
+        </ul>
+        <p>Total: ₡<span id="total-amount">0</span></p>
+        <button id="submit-order">Enviar Pedido</button>
+        <button id="clear-order">Limpiar Pedido</button>
+      </div>
+    </div>
+
+    <!-- Enlace al archivo JavaScript -->
+    <script src="../js/menu.js"></script>
+  </body>
+</html>

@@ -1,0 +1,197 @@
+/* Fuente para títulos */
+h1,
+h2,
+h3 {
+  font-family: "Playfair Display", serif; /* Fuente profesional y elegante para los títulos */
+  font-weight: 700;
+}
+
+/* Fuente para subtítulos */
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif; /* Fuente moderna y geométrica para subtítulos */
+  font-weight: 600;
+}
+
+/* Fuente para texto general */
+body,
+p {
+  font-family: "Roboto", sans-serif; /* Fuente limpia y legible para el texto general */
+  font-weight: 400;
+  line-height: 1.7; /* Para una mejor legibilidad */
+}
+
+/* Estilos del logo en la esquina superior izquierda */
+/* Estilos del logo en la esquina superior izquierda */
+/* Estilos del logo en la esquina superior izquierda */
+.logo-container {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 1000; /* Mantener el logo sobre otros elementos */
+}
+
+.logo-container img {
+  width: 200px; /* Aumentar el tamaño del logo */
+  height: 200px; /* Mantener las proporciones */
+  object-fit: cover;
+  border-radius: 50%; /* Mantener el logo redondeado */
+  border: 2px solid white; /* Añadir un borde blanco */
+  opacity: 0.8;
+}
+
+/* Sección Hero */
+.hero {
+  background-image: url("../assets/Img/frontLague.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 50px 20px;
+  color: white;
+  min-height: 600px; /* Aumentar la altura mínima */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.hero-text {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+  z-index: 10; /* Asegura que el texto esté por encima de la imagen */
+}
+
+.cta-button {
+  background-color: #27ae60;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #2ecc71;
+}
+
+/* Menú de navegación */
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-size: 18px;
+  color: white;
+  background-color: #3498db;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+  background-color: #2980b9;
+}
+
+/* Sección Galería */
+.gallery {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.gallery-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Pie de página */
+footer {
+  text-align: center;
+  margin-top: 40px;
+}
+
+footer p {
+  font-size: 14px;
+  color: #7f8c8d;
+}
+/* Posicionar los iconos de redes sociales en la esquina superior derecha */
+.social-icons {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* Estilos para cada icono */
+.social-icons a {
+  margin: 0 8px;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white; /* Color inicial */
+  font-size: 18px;
+  background-color: white; /* Fondo blanco sutil */
+  border: 1px solid #ccc; /* Borde sutil para un look profesional */
+  border-radius: 50%; /* Mantener los iconos circulares */
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Colores originales de las redes sociales */
+.social-icons a i {
+  color: inherit; /* Mantener el color original del icono */
+}
+
+/* Sin zoom en hover, solo cambio de borde */
+.social-icons a:hover {
+  border-color: #3498db; /* Cambiar el borde al pasar el mouse */
+  background-color: #f0f0f0; /* Fondo gris claro en hover */
+}
+
+/* Colores de cada red social, más sobrios */
+.social-icons a:nth-child(1) i {
+  color: #3b5998; /* Facebook */
+  opacity: 0.7;
+}
+
+.social-icons a:nth-child(2) i {
+  color: #e4405f; /* Instagram */
+  opacity: 0.7;
+}
+
+.social-icons a:nth-child(3) i {
+  color: #25d366; /* WhatsApp */
+  opacity: 0.7;
+}
+
+.social-icons a:nth-child(4) i {
+  color: #010101; /* TikTok */
+  opacity: 0.7;
+}

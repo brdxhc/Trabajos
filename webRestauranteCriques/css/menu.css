@@ -1,0 +1,149 @@
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* Contenedor del menú */
+.menu-container {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Título de la sección del menú */
+.menu-container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+/* Enlace para volver al inicio con flecha */
+nav a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #3498db;
+  display: inline-block;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  background-color: #ecf0f1;
+  transition: all 0.3s ease;
+}
+
+nav a:before {
+  content: "←"; /* Agregar la flecha antes del texto */
+  margin-right: 10px;
+  color: #2980b9;
+}
+
+nav a:hover {
+  background-color: #3498db;
+  color: white;
+}
+
+/* Estilo de cada item del menú */
+.menu-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  transition: background-color 0.3s ease;
+}
+
+.menu-item:hover {
+  background-color: #f1f1f1;
+}
+
+.menu-item h3 {
+  margin-bottom: 5px;
+  font-size: 18px;
+  flex: 1;
+}
+
+.menu-item p {
+  font-size: 14px;
+  color: #7f8c8d;
+  flex: 2;
+}
+
+/* Botón para añadir al pedido con tamaño uniforme */
+.add-to-order {
+  background-color: #27ae60;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  flex: 1;
+  text-align: center;
+  min-width: 160px; /* Todos los botones tendrán al menos este tamaño */
+  transition: background-color 0.3s ease;
+}
+
+.add-to-order:hover {
+  background-color: #2ecc71;
+}
+
+/* Contenedor del pedido actual */
+.order-summary {
+  margin-top: 30px;
+  padding: 15px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.order-summary h2 {
+  text-align: center;
+  margin-bottom: 15px;
+  color: #2c3e50;
+}
+
+.order-summary ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.order-summary ul li {
+  padding: 5px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.order-summary p {
+  font-size: 18px;
+  text-align: center;
+}
+
+/* Botones de acciones para el pedido */
+#submit-order,
+#clear-order {
+  display: inline-block;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+  margin-right: 10px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+#submit-order:hover,
+#clear-order:hover {
+  background-color: #2980b9;
+}

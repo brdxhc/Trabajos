@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calendario de Reservas - Centro Recreativo Los Criques</title>
+    <link rel="stylesheet" href="../css/calendario.css" />
+  </head>
+  <body>
+    <a href="./index.html" class="back-to-home">← Volver a Inicio</a>
+    <div class="calendar-container">
+      <div class="calendar-header">
+        <button id="prevMonth">Anterior</button>
+        <h2 id="currentMonth"></h2>
+        <button id="nextMonth">Siguiente</button>
+      </div>
+      <table id="calendar">
+        <thead>
+          <tr>
+            <th>Dom</th>
+            <th>Lun</th>
+            <th>Mar</th>
+            <th>Mié</th>
+            <th>Jue</th>
+            <th>Vie</th>
+            <th>Sáb</th>
+          </tr>
+        </thead>
+        <tbody id="calendar-body">
+          <!-- Los días se generarán aquí -->
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Formulario para detalles de la reserva -->
+    <div id="reservationForm" class="reservation-form">
+      <h3>Detalles de la Reserva</h3>
+      <div class="reservation-type">
+        <label for="reservationType">Tipo de Reserva:</label>
+        <select id="reservationType" name="reservationType">
+          <option value="cabanas">Alojamiento en Cabañas</option>
+          <option value="restaurante">Reservar Mesas en el Restaurante</option>
+          <option value="evento-privado">
+            Reservar Todo el Lugar para Eventos Privados
+          </option>
+          <option value="piscina">Reservar la Piscina para Eventos</option>
+        </select>
+      </div>
+      <!-- Formulario de reserva -->
+      <div id="detailsForm" class="details-form">
+        <label for="firstName">Nombre:</label>
+        <input type="text" id="firstName" name="firstName" required />
+
+        <label for="lastName">Apellido:</label>
+        <input type="text" id="lastName" name="lastName" required />
+
+        <label for="idNumber">Número de Cédula:</label>
+        <input type="text" id="idNumber" name="idNumber" required />
+
+        <label for="email">Correo Electrónico:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="extraRequests">Solicitudes Extras (Opcional):</label>
+        <textarea
+          id="extraRequests"
+          name="extraRequests"
+          rows="4"
+          maxlength="150"
+        ></textarea>
+
+        <button id="finalizeReservation">Finalizar Reserva</button>
+      </div>
+
+      <div class="buttons-container">
+        <button id="checkAvailability">Verificar Disponibilidad</button>
+        <button id="makeReservation">Hacer Reserva</button>
+        <button id="cancelReservation">Cancelar Reserva</button>
+        <button id="clearSelection">Limpiar Selección</button>
+      </div>
+
+      <p id="availabilityMessage"></p>
+    </div>
+
+    <script src="../js/calendario.js"></script>
+  </body>
+</html>
